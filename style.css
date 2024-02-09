@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'cordel';
+    src: url('EldesCordel-Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(236, 215, 215);
+}
+
+header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+header > h1 {
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+    font-family: 'cordel', Times, serif;
+    font-size: 100px;
+    font-size: 10vw;
+}
+
+header > p, a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: var(--font1);
+}
+
+a {
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 30px;
+}
+
+section.imagem {
+    background-color: rgb(145, 143, 143);
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
+}
+
+section.imagem > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 400px;
+}
+
+section#img01 {
+    background-image: url(cordel01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url(codel02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--font1);
+    font-size: 12px;
+}
+
+footer > a {
+    font-size: 12px;
+}
+
+
+
+
+
